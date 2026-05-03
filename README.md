@@ -1,8 +1,19 @@
-# 🌌 MeterFlow | Premium API Billing & Observability Platform
+# 🌌 MeterFlow | The Future of Usage-Based API Billing
 
-![MeterFlow Dashboard](docs/assets/dashboard_hero.png)
+> **Precision Metering. Real-time Observability. Seamless Billing.**
 
-**MeterFlow** is a high-fidelity, usage-based billing platform designed for modern AI and SaaS infrastructure. It provides seamless integration for API metering, key management, and real-time financial observability with a stunning "Neural" glassmorphism aesthetic.
+MeterFlow is a high-performance API billing platform featuring a premium neural design. Scale your API business with millisecond-accurate usage tracking and glassmorphic observability.
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ---
 
@@ -87,6 +98,15 @@ A state-of-the-art administrative interface featuring:
    ```bash
    npm run dev
    ```
+
+---
+
+## 🔮 Roadmap & Future Tooling
+- [ ] **Stripe Integration**: For automated invoice generation and payments.
+- [ ] **Redis Caching**: To handle high-volume request metering with ultra-low latency.
+- [ ] **Prometheus/Grafana**: For advanced system-level monitoring.
+- [ ] **Dockerization**: For seamless cloud-native deployments.
+- [ ] **Webhook Support**: To notify clients of usage milestones.
 
 ---
 
