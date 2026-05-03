@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-secondary: #0ea5e9;
+  --color-accent: #f43f5e;
+  --color-aurora-50: #f8fafc;
+  --color-aurora-100: #f1f5f9;
+  --color-aurora-200: #e2e8f0;
+  --color-aurora-300: #cbd5e1;
+  --color-aurora-400: #94a3b8;
+  --color-aurora-500: #64748b;
+  --color-aurora-600: #475569;
+  --color-aurora-700: #334155;
+  --color-aurora-800: #1e293b;
+  --color-aurora-900: #0f172a;
+}
+
+:root {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* Aurora Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.05);
+}
+
+.aurora-btn {
+  @apply bg-indigo-600 text-white px-6 py-3 rounded-2xl font-bold transition-all flex items-center gap-2 shadow-lg shadow-indigo-200;
+}
+
+.aurora-btn:hover {
+  @apply bg-indigo-700 -translate-y-0.5 shadow-xl shadow-indigo-300;
+}
+
+/* AI Visual Effects */
+.neural-grid-light {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black, transparent 90%);
+}
+
+.ai-scan-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+  animation: scan 4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}
+
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+/* Sidebar Custom Styling */
+.sidebar-item-light {
+  @apply flex items-center gap-3 px-4 py-3.5 rounded-2xl transition-all cursor-pointer font-medium;
+}
+
+.sidebar-item-light.active {
+  @apply bg-indigo-600 text-white shadow-lg shadow-indigo-200;
+}
+
+.sidebar-item-light:not(.active) {
+  @apply text-slate-500 hover:bg-indigo-50 hover:text-indigo-600;
+}
+
+/* Typography Enhancements */
+h1, h2, h3 {
+  letter-spacing: -0.03em;
+}
+
+/* Animations */
+.hover-float {
+  @apply transition-transform duration-300;
+}
+.hover-float:hover {
+  @apply -translate-y-1;
+}
